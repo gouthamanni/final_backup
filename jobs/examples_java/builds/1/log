@@ -1,0 +1,24 @@
+Started by user [8mha:////4B8YUMsoQ4aeziQzCwE1uGS67rJZ4dnwwP4he6iIQnavAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mGoutham
+Running as SYSTEM
+Building remotely on [8mha:////4A3Pd4LVe1y7VYY63umQTLUUjuIhWtK5Rk5RopM0QNRWAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eKcxLJUAyMAW2K2W8YAAAA=[0mslave02 in workspace /home/ubuntu/workspace/examples_java
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/gouthamanni/examples-java-maven.git
+ > git init /home/ubuntu/workspace/examples_java # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/examples-java-maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/examples-java-maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gouthamanni/examples-java-maven.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gouthamanni/examples-java-maven.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/examples-java-maven.git
+ > git fetch --tags --progress -- https://github.com/gouthamanni/examples-java-maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 40251a6c73ddb388878011c625aff88d0e8582f6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 40251a6c73ddb388878011c625aff88d0e8582f6 # timeout=10
+Commit message: "committed"
+First time build. Skipping changelog.
+No mail will be sent out, as 'examples_java #1' does not have a result yet. Please make sure you set a proper result in case of pipeline/build scripts.
+Finished: SUCCESS

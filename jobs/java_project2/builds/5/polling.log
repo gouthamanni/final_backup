@@ -1,0 +1,11 @@
+Started on Jan 15, 2020, 2:56:34 AM
+Started by event from 140.82.115.251 ⇒ http://18.223.114.39:8080/github-webhook/ on Wed Jan 15 02:56:34 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 3edfd2a9851aa8511cca6d7b5988bafbd937fa58 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/gouthamanni/latest_java.git # timeout=10
+Found 1 remote heads on https://github.com/gouthamanni/latest_java.git
+[poll] Latest remote head revision on refs/heads/master is: 3e448f44167ffe66539a4edca88db29028457d88
+Done. Took 0.14 sec
+Changes found

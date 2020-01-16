@@ -1,0 +1,37 @@
+Started by user [8mha:////4B8YUMsoQ4aeziQzCwE1uGS67rJZ4dnwwP4he6iIQnavAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mGoutham
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/problem_2
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/gouthamanni/New.git
+ > git init /var/lib/jenkins/workspace/problem_2 # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/New.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/New.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gouthamanni/New.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gouthamanni/New.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/New.git
+ > git fetch --tags --progress -- https://github.com/gouthamanni/New.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c7cb9a5772533b1ae625aecab25abf49780e9b55 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c7cb9a5772533b1ae625aecab25abf49780e9b55 # timeout=10
+Commit message: "reverse added"
+First time build. Skipping changelog.
+[problem_2] $ /bin/sh -xe /tmp/jenkins15014945404720185675.sh
++ cd /var/lib/jenkins/workspace/problem_2
++ make
+gcc -c big3.c
+gcc -c reverse.c
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:2:2: warning: implicit declaration of function ‘big’ [-Wimplicit-function-declaration]
+  big();
+  ^~~
+main.c:3:2: warning: implicit declaration of function ‘rev’ [-Wimplicit-function-declaration]
+  rev();
+  ^~~
+gcc -o  ABC.exe big3.o reverse.o main.o
+Finished: SUCCESS

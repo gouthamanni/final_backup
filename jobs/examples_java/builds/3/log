@@ -1,0 +1,111 @@
+Started by GitHub push by gouthamanni
+Running as SYSTEM
+Building remotely on [8mha:////4IoyxTOi8U971lPx3fr1l8OMRagZk0pRu40XgNDm1W93AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6xTmJZam6BoYA4R06JscAAAA=[0mslave-01 in workspace /home/ubuntu/workspace/examples_java
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gouthamanni/examples-java-maven.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/examples-java-maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/examples-java-maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 434544b49802f5260d62de31b74281e518ccd093 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 434544b49802f5260d62de31b74281e518ccd093 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 40251a6c73ddb388878011c625aff88d0e8582f6 # timeout=10
+[examples_java] $ mvn clean install
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.srcclr:example-java-maven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding example-java-maven 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/ubuntu/workspace/examples_java/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/examples_java/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /home/ubuntu/workspace/examples_java/target/classes
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java: /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/examples_java/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 2 source files to /home/ubuntu/workspace/examples_java/target/test-classes
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java: /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/ubuntu/workspace/examples_java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.srcclr.MainTest
+lol
+1
+2
+GET
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+?
+meow
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.231 sec
+Running com.srcclr.BCryptTest
+BCrypt.hashpw w/ international chars: ..
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/ubuntu/workspace/examples_java/target/example-java-maven-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Installing /home/ubuntu/workspace/examples_java/target/example-java-maven-1.0-SNAPSHOT.jar to /home/ubuntu/.m2/repository/com/srcclr/example-java-maven/1.0-SNAPSHOT/example-java-maven-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/ubuntu/workspace/examples_java/pom.xml to /home/ubuntu/.m2/repository/com/srcclr/example-java-maven/1.0-SNAPSHOT/example-java-maven-1.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  16.856 s
+[[1;34mINFO[m] Finished at: 2020-01-16T07:50:26Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+No mail will be sent out, as 'examples_java #3' does not have a result yet. Please make sure you set a proper result in case of pipeline/build scripts.
+Finished: SUCCESS

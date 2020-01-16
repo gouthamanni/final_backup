@@ -1,0 +1,40 @@
+Started by GitHub push by gouthamanni
+Running as SYSTEM
+Building remotely on [8mha:////4IoyxTOi8U971lPx3fr1l8OMRagZk0pRu40XgNDm1W93AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6xTmJZam6BoYA4R06JscAAAA=[0mslave-01 in workspace /home/ubuntu/workspace/java_project2
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gouthamanni/latest_java.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/latest_java.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/latest_java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f25c15238d458e76fea676c084defd9a203ab540 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f25c15238d458e76fea676c084defd9a203ab540 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 3e448f44167ffe66539a4edca88db29028457d88 # timeout=10
+[java_project2] $ mvn clean install
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM /home/ubuntu/workspace/java_project2/pom.xml: comment started on line 20 and column 6 was not closed (position: END_TAG seen ...</plugins>\n\t</build>\n</project>\n... @51:1) caused by: java.io.EOFException: no more data available - expected end tag </project> to close start tag <project> from line 1, parser stopped on END_TAG seen ...</plugins>\n\t</build>\n</project>\n... @51:1 @ line 51, column 1
+ @ 
+[[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
+[[1;31mERROR[m]   
+[[1;31mERROR[m]   The project  (/home/ubuntu/workspace/java_project2/pom.xml) has 1 error
+[[1;31mERROR[m]     Non-parseable POM /home/ubuntu/workspace/java_project2/pom.xml: comment started on line 20 and column 6 was not closed (position: END_TAG seen ...</plugins>\n\t</build>\n</project>\n... @51:1) caused by: java.io.EOFException: no more data available - expected end tag </project> to close start tag <project> from line 1, parser stopped on END_TAG seen ...</plugins>\n\t</build>\n</project>\n... @51:1 @ line 51, column 1 -> [1m[Help 2][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[[1;31mERROR[m] [1m[Help 2][m http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

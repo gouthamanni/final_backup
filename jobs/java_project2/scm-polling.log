@@ -1,0 +1,10 @@
+Started on Jan 15, 2020, 2:50:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision cce5f14026512344ca80a6fa25daca13282a319b (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/gouthamanni/latest_java.git # timeout=10
+Found 1 remote heads on https://github.com/gouthamanni/latest_java.git
+[poll] Latest remote head revision on refs/heads/master is: cce5f14026512344ca80a6fa25daca13282a319b - already built by 1
+Done. Took 0.26 sec
+No changes

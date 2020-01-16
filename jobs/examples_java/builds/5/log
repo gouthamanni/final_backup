@@ -1,0 +1,146 @@
+Started by GitHub push by gouthamanni
+Running as SYSTEM
+Building remotely on [8mha:////4IoyxTOi8U971lPx3fr1l8OMRagZk0pRu40XgNDm1W93AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6xTmJZam6BoYA4R06JscAAAA=[0mslave-01 in workspace /home/ubuntu/workspace/examples_java
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gouthamanni/examples-java-maven.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/examples-java-maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/examples-java-maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4ee563ffb8e045396612bda6a939174796566a53 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4ee563ffb8e045396612bda6a939174796566a53 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 3c689743a94d8830ad6bc72a3d5787f39a5eb52b # timeout=10
+[examples_java] $ mvn clean install
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.srcclr:example-java-maven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding example-java-maven 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/ubuntu/workspace/examples_java/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/examples_java/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /home/ubuntu/workspace/examples_java/target/classes
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java: /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/main/java/com/srcclr/Main.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/examples_java/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 2 source files to /home/ubuntu/workspace/examples_java/target/test-classes
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java: /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/ubuntu/workspace/examples_java/src/test/java/com/srcclr/MainTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/ubuntu/workspace/examples_java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.srcclr.MainTest
+lol
+1
+2
+GET
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+?
+meow
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.33 sec
+Running com.srcclr.BCryptTest
+BCrypt.hashpw w/ international chars: ..
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/ubuntu/workspace/examples_java/target/example-java-maven-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mexample-java-maven[0;1m ---[m
+[[1;34mINFO[m] Installing /home/ubuntu/workspace/examples_java/target/example-java-maven-1.0-SNAPSHOT.jar to /home/ubuntu/.m2/repository/com/srcclr/example-java-maven/1.0-SNAPSHOT/example-java-maven-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/ubuntu/workspace/examples_java/pom.xml to /home/ubuntu/.m2/repository/com/srcclr/example-java-maven/1.0-SNAPSHOT/example-java-maven-1.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  17.133 s
+[[1;34mINFO[m] Finished at: 2020-01-16T08:12:41Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Not sending mail to unregistered user noreply@github.com
+Sending e-mails to: gouthampcbz@gmail.com
+ERROR: Could not connect to SMTP host: localhost, port: 25
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 25;
+  nested exception is:
+	java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1934)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at hudson.tasks.MailSender.run(MailSender.java:130)
+	at hudson.tasks.Mailer.perform(Mailer.java:175)
+	at hudson.tasks.Mailer.perform(Mailer.java:138)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1878)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:427)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:286)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:231)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1900)
+	... 18 more
+Finished: SUCCESS

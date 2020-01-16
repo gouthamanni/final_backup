@@ -1,0 +1,21 @@
+Started by user [8mha:////4B8YUMsoQ4aeziQzCwE1uGS67rJZ4dnwwP4he6iIQnavAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mGoutham
+Running as SYSTEM
+Building remotely on [8mha:////4IoyxTOi8U971lPx3fr1l8OMRagZk0pRu40XgNDm1W93AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6xTmJZam6BoYA4R06JscAAAA=[0mslave-01 in workspace /home/ubuntu/workspace/problem_2
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gouthamanni/New.git # timeout=10
+Fetching upstream changes from https://github.com/gouthamanni/New.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/gouthamanni/New.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c7cb9a5772533b1ae625aecab25abf49780e9b55 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c7cb9a5772533b1ae625aecab25abf49780e9b55 # timeout=10
+Commit message: "reverse added"
+ > git rev-list --no-walk c7cb9a5772533b1ae625aecab25abf49780e9b55 # timeout=10
+[problem_2] $ /bin/sh -xe /tmp/jenkins5465858291163841691.sh
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

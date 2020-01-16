@@ -1,0 +1,11 @@
+Started on Jan 16, 2020, 7:49:59 AM
+Started by event from 192.30.252.89 ⇒ http://18.223.114.39:8080/github-webhook/ on Thu Jan 16 07:49:59 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 40251a6c73ddb388878011c625aff88d0e8582f6 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/gouthamanni/examples-java-maven.git # timeout=10
+Found 3 remote heads on https://github.com/gouthamanni/examples-java-maven.git
+[poll] Latest remote head revision on refs/heads/master is: 434544b49802f5260d62de31b74281e518ccd093
+Done. Took 0.21 sec
+Changes found
